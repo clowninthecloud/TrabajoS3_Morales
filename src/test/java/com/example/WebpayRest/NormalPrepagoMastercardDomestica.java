@@ -19,11 +19,12 @@ public class NormalPrepagoMastercardDomestica {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-    System.setProperty("webdriver.chrome.driver", "");
+    System.setProperty("webdriver.chrome.driver", "D:\\TBK\\Automatizacion\\src\\test\\resources\\windows\\chromedriver.exe");
     driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
    // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     js = (JavascriptExecutor) driver;
+    driver.manage().window().maximize();
   }
 
   @Test
@@ -31,6 +32,7 @@ public class NormalPrepagoMastercardDomestica {
     driver.get("https://web1qa.test.transbank.cl:5443/RestStoreWebPay/");
     driver.findElement(By.xpath("//a[contains(text(),'Tienda\n                    normal')]")).click();
     driver.findElement(By.name("apiversion")).click();
+    new Select(driver.findElement(By.name("apiversion"))).selectByVisibleText("v1.2/");
     driver.findElement(By.xpath("//*/text()[normalize-space(.)='']/parent::*")).click();
     driver.findElement(By.id("amount")).clear();
     driver.findElement(By.id("amount")).sendKeys("5555");
