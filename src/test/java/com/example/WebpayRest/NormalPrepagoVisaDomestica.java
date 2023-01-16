@@ -35,7 +35,7 @@ public class NormalPrepagoVisaDomestica {
     driver.findElement(By.id("ewebpayTestForm:ewptdAmount")).clear();
     driver.findElement(By.id("ewebpayTestForm:ewptdAmount")).sendKeys("8888");
     driver.findElement(By.xpath("//button[@id='ewebpayTestForm:j_idt32']/span")).click();
-    Thread.sleep(3000);//para que no vaya tan rapido
+    Thread.sleep(4000);//para que no vaya tan rapido
     driver.findElement(By.xpath("//button[@id='tarjetas']/div[2]/div")).click();
     driver.findElement(By.id("card-number")).click();
     driver.findElement(By.id("card-number")).clear();
