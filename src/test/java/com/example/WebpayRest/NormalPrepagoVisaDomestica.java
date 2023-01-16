@@ -14,7 +14,7 @@ public class NormalPrepagoVisaDomestica {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
-  private StringBuffer verificationErrors = new StringBuffer();
+  private final StringBuffer verificationErrors = new StringBuffer();
   private JavascriptExecutor js;
 
   @BeforeClass(alwaysRun = true)
