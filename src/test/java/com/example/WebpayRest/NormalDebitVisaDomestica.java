@@ -24,6 +24,7 @@ public class NormalDebitVisaDomestica {
     baseUrl = "https://www.google.com/";
    // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     js = (JavascriptExecutor) driver;
+    driver.manage().window().maximize();
   }
 
   @Test
