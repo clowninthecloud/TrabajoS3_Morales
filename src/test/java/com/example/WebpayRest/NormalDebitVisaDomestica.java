@@ -54,7 +54,7 @@ public class NormalDebitVisaDomestica {
     driver.findElement(By.xpath("//input[@value='Aceptar']")).click();
     driver.findElement(By.xpath("//input[@value='Seguir (setResultAut)']")).click();
     driver.findElement(By.xpath("//input[@value='Seguir (retorno a Transbank)']")).click();
-    Thread.sleep(2000);//para que no vaya tan rapido
+    Thread.sleep(4000);//para que no vaya tan rapido
     driver.findElement(By.xpath("//button[@id='j_idt47:j_idt52']/span")).click();
     Thread.sleep(4000);//para que no vaya tan rapido
   }
