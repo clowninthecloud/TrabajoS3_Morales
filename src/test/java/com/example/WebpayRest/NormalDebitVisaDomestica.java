@@ -46,6 +46,7 @@ public class NormalDebitVisaDomestica {
     driver.findElement(By.id("card-dni")).clear();
     driver.findElement(By.id("card-dni")).sendKeys("11.111.111-1");
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Rut'])[1]/following::button[1]")).click();
+    Thread.sleep(4000);//para que no vaya tan rapido
     driver.findElement(By.name("rut")).clear();
     driver.findElement(By.name("rut")).sendKeys("10726100-1");
     driver.findElement(By.name("clave")).clear();
