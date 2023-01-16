@@ -35,10 +35,13 @@ public class NormalDebitVisaDomestica {
     driver.findElement(By.id("ewebpayTestForm:ewptdAmount")).clear();
     driver.findElement(By.id("ewebpayTestForm:ewptdAmount")).sendKeys("999");
     driver.findElement(By.xpath("//button[@id='ewebpayTestForm:j_idt32']/span")).click();
+    Thread.sleep(2000);//para que no vaya tan rapido
     driver.findElement(By.xpath("//button[@id='tarjetas']/div[2]")).click();
     driver.findElement(By.id("card-number")).click();
     driver.findElement(By.id("card-number")).clear();
     driver.findElement(By.id("card-number")).sendKeys("4263 1310 0000 0226");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Número de tarjeta'])[1]/following::button[1]")).click();
+    Thread.sleep(2000);//para que no vaya tan rapido
     driver.findElement(By.id("card-dni")).click();
     driver.findElement(By.id("card-dni")).clear();
     driver.findElement(By.id("card-dni")).sendKeys("11.111.111-1");
