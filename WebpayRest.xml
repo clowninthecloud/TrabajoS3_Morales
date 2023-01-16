@@ -1,0 +1,54 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "WebpayRest">
+<test name = "NormalCreditoVisaDomestica">
+    <classes>
+        <class name = "com.example.WebpayRest.NormalCreditoVisaDomestica"/>
+    </classes>
+</test>
+<test name = "NormalCreditoMastercardDomestica">
+    <classes>
+        <class name = "com.example.WebpayRest.NormalCreditoMastercardDomestica"/>
+    </classes>
+</test>
+<test name = "NormalDebitoVisaDomestica">
+    <classes>
+        <class name = "com.example.WebpayRest.NormalDebitoVisaDomestica"/>
+    </classes>
+</test>
+<test name = "NormalDebitoMastercardDomestica">
+    <classes>
+        <class name = "com.example.WebpayRest.NormalDebitoMastercardDomestica"/>
+    </classes>
+</test>
+<test name = "NormalPrepagoVisaDomestica">
+    <classes>
+        <class name = "com.example.WebpayRest.NormalPrepagoVisaDomestica"/>
+    </classes>
+</test>
+<test name = "NormalPrepagoMastercardDomestica">
+    <classes>
+        <class name = "com.example.WebpayRest.NormalPrepagoMastercardDomestica"/>
+    </classes>
+</test>
+<test name = "NormalDebitVisaDomestica">
+    <classes>
+        <class name = "com.example.WebpayRest.NormalDebitVisaDomestica"/>
+    </classes>
+</test>
+<test name = "NormalDebitMastercardDomestica">
+    <classes>
+        <class name = "com.example.WebpayRest.NormalDebitMastercardDomestica"/>
+    </classes>
+</test>
+<test name = "NormalCreditoVisa3Cuotas">
+    <classes>
+        <class name = "com.example.WebpayRest.NormalCreditoVisa3Cuotas"/>
+    </classes>
+</test>
+<test name = "NormalCreditoVisa24Cuotas">
+    <classes>
+        <class name = "com.example.WebpayRest.NormalCreditoVisa24Cuotas"/>
+    </classes>
+</test>
+</suite>
