@@ -19,11 +19,12 @@ public class NormalPrepagoVisaDomestica {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-    System.setProperty("webdriver.chrome.driver", "");
+    System.setProperty("webdriver.chrome.driver", "D:\\TBK\\Automatizacion\\src\\test\\resources\\windows\\chromedriver.exe");
     driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
    // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     js = (JavascriptExecutor) driver;
+    driver.manage().window().maximize();
   }
 
   @Test
